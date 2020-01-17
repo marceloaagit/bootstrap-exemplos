@@ -10,9 +10,43 @@
 </head>
 <body>
 
-    
+    <h1>exemplo de badge<span class="badge badge-primary">badge</span></h1>
+    <h2>exemplo de badge<span class="badge badge-primary">badge</span></h2>
+    <h3>exemplo de badge<span class="badge badge-primary">badge</span></h3>
+    <h4>exemplo de badge<span class="badge badge-primary">badge</span></h4>
+    <h5>exemplo de badge<span class="badge badge-primary">badge</span></h5>
+    <h6>exemplo de badge<span class="badge badge-primary">badge</span></h6>
 
+    <hr>
+
+    <button id="btn-click" type="button" class="btn btn-primary">Clique <span class="badge badge-light">0</span></button>
        
+    <hr>
+
+    <button:button class="btn btn-primary">Caixa de entrada 
+        <span class="badge badge-light">5</span>
+        <span class="sr-only">Ha 5 mensagens nao lidas</span>
+    </button:button>
+
+    <hr>
+
+    <span class="badge badge-primary">primary</span>
+    <span class="badge badge-secondary">secondary</span>
+    <span class="badge badge-success">sucess</span>
+    <span class="badge badge-danger">danger</span>
+    <span class="badge badge-info">info</span>
+    <span class="badge badge-warning">warning</span>
+    <span class="badge badge-dark">dark</span>
+    <span class="badge badge-light">light</span>
+
+    <hr>
+
+    <span class="badge badge-primary ">badge normal</span>
+    <span class="badge badge-primary badge-pill">badge pill</span>
+
+    <hr>
+
+    <a href="" class="badge badge-success">badge com link</a>
 
     
 
@@ -26,7 +60,8 @@
 <script>
     $(() => {
      $('#btn-click').on('click', e => {
-        $('#btn-auto-save').button('toggle');
+        const valor = parseInt($(e.target).find('.badge').text());
+        $(e.target).find('.badge').text(valor + 1);
      });
 
     });

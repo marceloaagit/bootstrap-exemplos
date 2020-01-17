@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercicio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+    
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-secondary">Secondary</button>
+                <button class="btn btn-success">Success</button>
+                <button class="btn btn-danger">Danger</button>
+                <button class="btn btn-info">Info</button>
+                <button class="btn btn-dark">Darck</button>
+                <button class="btn btn-light">Light </button>
+                <button class="btn btn-link">Link </button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <input type="button" class="btn btn-primary" value="input">
+                <a href="" class="btn btn-primary">Link</a>
+                <button class="btn btn-primary">Button</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col"><button class="btn btn-outline-primary">Outline</button></div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-success btn-lg">Lg</button>
+                <button class="btn btn-danger btn-sm">Sm</button>
+            </div>
+        </div>
+        
+        <hr>
+
+        <div class="row">
+            <div class="col"><button class="btn btn-primary btn-block">Btn-block</button></div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col"><a href="#" class="btn btn-primary btn-block active" arial-pressed="true">link Btn-block active</a></div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col"><button class="btn btn-danger btn-block" disabled>disable</button></div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-success" id="btn-auto-save" data-toggle="button">Auto save</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label for="option1" class="btn btn-secondary active"><input type="radio" name="options" id="option1" checked>1</label>
+                    <label for="option2" class="btn btn-secondary"><input type="radio" name="options" id="option2">2</label>
+                    <label for="option3" class="btn btn-secondary"><input type="radio" name="options" id="option3">3</label>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <button class="btn btn-primary" id="btn-click">Ativa/Desativa auto save</button>
+
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+    $(() => {
+     $('#btn-click').on('click', e => {
+        $('#btn-auto-save').button('toggle');
+     });
+
+    });
+    
+    </script>
+
+</body>
+</html>
